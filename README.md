@@ -26,9 +26,9 @@ A JavaEE web application that helps users track their daily calorie intake and c
 
 # Requirements
 
-  ...JDK 8+
+  JDK 8+
 
-  ...Apache Tomcat (10.1)
+  Apache Tomcat (10.1)
 
-  ...MySQL (or other supported database)
+  MySQL (or other supported database)
 
