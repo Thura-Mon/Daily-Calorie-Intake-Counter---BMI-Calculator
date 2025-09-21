@@ -1,0 +1,313 @@
+@charset "UTF-8";*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;
+    color: rgb(7, 7, 7);}
+    a:hover{
+        color:rgb(12, 12, 12);
+    }
+    html,body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        overflow:scroll;
+       /*  display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgreen;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-attachment: fixed;
+        
+    }
+    
+    .cross{
+        height: 40px;
+        width: 30px;   
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    } 
+    .header {
+        position: fixed;
+        background-color: white;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 90px;
+        padding: 10px;
+        z-index: 1;
+        
+    }
+    
+    .INteamlogo{
+        width: 80px;
+        height: 80px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .line{ 
+        margin: 0.8rem 0;
+        height: 1px;
+        background-color: rgb(18, 17, 17);
+    }
+    
+    .left-section{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3px;
+    
+    }
+    #main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+        transition: margin-left 0.5s;
+        padding: 16px;
+        align-items:start;
+    }
+    .middle_section{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      
+    
+    .open {
+        padding-top: 10px;
+        background-color:white;
+        color: rgb(19, 19, 19);
+        border-radius: 2px;
+        cursor: pointer;
+        align-content:flex-start;
+        border: none;
+    }
+    .options{
+        padding: 20px;
+        cursor: pointer;
+        margin-right: 0.2rem;
+        
+    }
+    .options:hover{
+        background-color: #dddde2;
+        border-radius: 12px;
+    }
+    .options p{
+        margin-left: 1.5rem;
+        font-size: 1em; 
+        color: darkgreen;
+        
+    }
+    .sidebarHeader{
+        display: grid;
+        grid-template-columns: 1fr 50px  ;
+    }
+    #sidebar {
+        position: fixed;
+        left:-250px;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+         transition: left 0.5s ease, opacity 0.5s ease;
+      opacity: 0; 
+        z-index : 100; 
+        overflow : auto; 
+    } 
+    #sidebar.open {
+        left: 0;
+        opacity: 1;
+        border-radius: 10px;
+    }
+    .sidebar_icon{
+        height: 28px;
+        width: 28px;
+        
+    }
+    
+    .teamlogo{
+        width: 70px;
+        height: 70px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: start;   
+        padding-left: 10px;
+        margin-top: -10px;
+
+    }
+    p{
+        font-size: 15px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        display: inline-block;
+    }
+    
+    
+    .menu{
+    	z-index:0; 
+        padding: 0 10px 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 20px 40px;
+        padding-top: 70px;
+        overflow-y: scroll;
+        height: 640px;
+    }
+    
+    
+    .food-items{
+        display: grid;
+        position: relative;
+        grid-template-rows: auto 1fr;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgb(12, 12, 12);
+        transition: .2s ease-in-out;
+    }
+    .food-items img{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        cursor: pointer;
+        border-radius: 15px 15px 0 0;
+    
+    }
+    .details-sub{
+        padding:  10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        
+    }
+    
+    .price1{
+        
+        width: 50px;
+        height: 20px;
+    }
+    h5{
+        font-weight: 600;
+        font-size: 18px;  
+    }
+    .btn-primary{
+        width: 30%;
+        padding: 10px;
+        margin-left: 20px;
+        border: none;
+        border-radius: 50px;
+         background: white;
+         transition: .5s;
+         margin-bottom: 20px;
+         margin-top: 20px;
+
+    }
+    
+    .btn-primary:hover{
+        background: #014124;
+        color: #dddde2;
+        transition: -0.5s;
+    }
+    
+    .btn-primary:active{
+    background-color:rgb(169, 255, 180) ;
+    }
+    
+    
+    
+        .btn-primary1{
+    color:darkgreen;
+    width:110%;
+    height:100px;
+    background-color: transparent;
+    border: solid 1px darkgreen;
+    border-radius: 5px;
+    
+    }
+    
+    .btn-primary1:hover{
+     color:white;
+     background-color:darkgreen;
+     transition:0.5s;
+     box-shadow:  30px darkgreen;
+     cursor: pointer;
+    }
+    
+    .btn-primary1:active{
+     background-color: rgb(169, 255, 180) ;
+     transition: -0.5s;
+    }
+    
+    
+    
+    
+    
+.calories-card {
+    background-color: #eaf7e6;
+    padding: 50px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30%;
+    color: #4CAF50;
+    height:300px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+.description {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.value {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.keto-section {
+    margin-top: 20px;
+}
+
+.keto-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.keto-section button:hover {
+    background-color: #45a049;
+}

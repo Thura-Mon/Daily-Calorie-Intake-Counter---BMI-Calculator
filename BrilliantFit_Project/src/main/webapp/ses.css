@@ -1,0 +1,195 @@
+@charset "ISO-8859-1";
+
+a{text-decoration: none;
+    color: rgb(7, 7, 7);}
+    a:hover{
+        color:rgb(12, 12, 12);
+        
+    }
+    html,body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        overflow: auto;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-attachment: fixed;  
+        font-weight: 400;
+        font-style: normal;
+        background_color: black;
+
+        
+    }
+
+    
+    
+    .cross{
+        height: 40px;
+        width: 30px;   
+    }
+    #close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .header {
+        position: fixed;
+        background-color: white;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .INteamlogo{
+        width: 80px;
+        height: 80px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .line{ 
+        margin: 0.8rem 0;
+        height: 1px;
+        background-color: rgb(18, 17, 17);
+    }
+    
+    .left-section{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3px;
+    
+    }
+    #main-content {
+        display: flex;
+        max-height:100%; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 70%;
+        padding-right:50px;
+        transition: margin-left 0.5s;
+        padding: 16px;
+        align-items:start;
+    }
+    .middle_section{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+    .open {
+        padding-top: 10px;
+        background-color:white;
+        color: rgb(19, 19, 19);
+        border-radius: 2px;
+        cursor: pointer;
+        align-content:flex-start;
+        border: none;
+    }
+    .options{
+        padding: 0.2rem 0.2rem;
+        cursor: pointer;
+        margin-right: 0.2rem;
+        
+    }
+    .options:hover{
+        background-color: #dddde2;
+        border-radius: 12px;
+    }
+    .options p{
+        margin-left: 1.5rem;
+        font-size: 1em; 
+        color: darkgreen;
+        
+    }
+    .sidebarHeader{
+        display: grid;
+        grid-template-columns: 1fr 50px  ;
+    }
+    #sidebar {
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        transition: left 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        z-index : 100; 
+        overflow : auto;
+    }
+    #sidebar.open {
+        left: 0;
+        opacity: 1;
+        border-radius: 10px;
+    }
+    .sidebar_icon{
+        height: 28px;
+        width: 28px;
+        
+    }
+    
+    .teamlogo{
+        width: 70px;
+        height: 70px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: start;   
+        padding-left: 10px;
+        margin-top: -10px;
+
+    }
+    
+
+
+.calories-card {
+	margin-top:100px;
+	width:800px;
+    background-color: darkgreen;
+    
+    border-radius: 10px;
+    width: 800px;
+    box-shadow: 0 1px  20px 3px rgba(0, 0, 0, 0.5);
+    margin-right: 20%;
+    max-height:500px;
+}
+
+h2 {
+    
+    margin-bottom: 10px;
+}
+
+
+
+
+
+h3 {
+   
+    margin: 10px 0 5px;
+}
+
+.value {
+   
+    font-weight: bold;
+}
+
+.keto-section {
+    margin-top: 20px;
+    color: aliceblue;
+}
+

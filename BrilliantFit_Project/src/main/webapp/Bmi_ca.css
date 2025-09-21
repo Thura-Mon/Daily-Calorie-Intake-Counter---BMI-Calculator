@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;
+    color: rgb(7, 7, 7);}
+    a:hover{
+        color:rgb(12, 12, 12);
+    }
+    html,body {
+
+    
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-attachment: fixed;
+
+    }
+    
+    .cross{
+        height: 40px;
+        width: 30px;   
+    }
+    #close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .header {
+        position: fixed;
+        background-color: white;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 90px;
+        padding: 10px;
+        z-index: 1;
+        
+    }
+    
+    .INteamlogo{
+        width: 80px;
+        height: 80px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .line{ 
+        margin: 0.8rem 0;
+        height: 1px;
+        background-color: rgb(18, 17, 17);
+    }
+    
+    .left-section{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3px;
+    
+    }
+    #main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+        transition: margin-left 0.5s;
+        padding: 16px;
+        align-items:start;
+    }
+    .middle_section{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+    .open {
+        padding-top: 10px;
+        background-color:white;
+        color: rgb(19, 19, 19);
+        border-radius: 2px;
+        cursor: pointer;
+        align-content:flex-start;
+        border: none;
+    }
+    .options{
+        padding: 20px;
+        cursor: pointer;
+        margin-right: 0.2rem;
+        
+    }
+    .options:hover{
+        background-color: #dddde2;
+        border-radius: 12px;
+    }
+    .options p{
+        margin-left: 1.5rem;
+        font-size: 1em; 
+        color: darkgreen;
+        
+    }
+    .sidebarHeader{
+        display: grid;
+        grid-template-columns: 1fr 50px  ;
+    }
+    #sidebar {
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        transition: left 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        z-index : 100; 
+        overflow : auto;
+    }
+    #sidebar.open {
+        left: 0;
+        opacity: 1;
+        border-radius: 10px;
+    }
+    .sidebar_icon{
+        height: 28px;
+        width: 28px;
+        
+    }
+    
+    .teamlogo{
+        width: 70px;
+        height: 70px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: start;   
+        padding-left: 10px;
+        margin-top: -10px;
+
+    }
+    p{
+        font-size: 20px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        display: inline-block;
+    }
+:root {
+  --underweight: orange;
+  --normal: green;
+  --overweight: lightcoral;
+  --obese: crimson;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+
+
+
+.body{
+  background-color:rgba(0, 0, 0, 0.291);  width: 700%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  z-index: 1;
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 120%;
+  max-width: 770px;
+  background: linear-gradient(20deg, rgb(9, 38, 53)0%,
+rgb(158, 200, 185)35%,rgb(27, 66, 66)100%);
+  padding: 1rem;
+  border-radius: 50px;
+  border: 1.5px solid rgba(20, 20, 20, 0.741);
+  box-shadow: 0 30px 15px rgba(3, 3, 3, 0.532);
+  display: grid;
+  gap: 1rem;
+  max-height: 900%;
+}
+
+.calculator {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculator label {
+  flex: 0 1 120px;
+  font-weight: 600;
+}
+
+.calculator input {
+  flex: 1;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #000000;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.calculator button {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: #9ED5C5;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.calculator button[type="reset"] {
+  background: darkred;
+  color: white;
+}
+
+.calculator button:hover {
+	transition: -0.5s;
+  filter: brightness(120%);
+}
+
+.calculator button:active {
+	transition: -0.5s;
+  filter: brightness(180%);
+}
+
+
+.output {
+  text-align: center;
+}
+
+.output #bmi {
+  font-size: 4rem;
+}
+
+.output #desc strong {
+  text-transform: uppercase;
+}
+
+.bmi-scale {
+  display: flex;
+}
+
+.bmi-scale div {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color);
+  padding: 10px;
+}
+
+.bmi-scale h4 {
+  font-size: 0.75rem;
+  color: rgb(255, 255, 255);
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
