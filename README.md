@@ -1,4 +1,4 @@
-<h1>aily Calorie Intake Counter & BMI Calculator</h1>
+<h1>Daily Calorie Intake Counter & BMI Calculator</h1>
 
 A JavaEE web application that helps users track their daily calorie intake and calculate Body Mass Index (BMI). Designed as an academic project, it demonstrates practical use of JavaEE for building health-related applications.
 
